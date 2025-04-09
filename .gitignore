@@ -147,3 +147,4 @@ dmypy.json
 cluster.sh
 .idea/
 maps/*.pt
+v1.0-mini.tgz

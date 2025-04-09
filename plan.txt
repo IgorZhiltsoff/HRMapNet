@@ -1,0 +1,3 @@
+-1. Asking the supervisor if this is an OK repo, or are the Chinese fucking with me
+0. Actually reading the code, no matter how hard it is
+1. Debug inference and try to reverse engineering what I see
