@@ -3,12 +3,36 @@
 1. Debug inference and try to reverse engineering what I see
 
 -----------------------------------------------------
+-1. NORMAL LINE NUMERATION
+
+0. PERHAPS Vectorized global map downside: different number of points for different objects,
+    also hard to extract local map with exact number of points 
+    (FIX? store global objects as batches of local ones, each of Nv points)
 
 Step 1 DETR
 
-1. Understand 362-440, 484-530 in .....
-2. Find and explain queries for decoder
+
+1. Understand 362-440, 484-530 in projects\mmdet3d_plugin\maptr\dense_heads\maptrv2_head.py
+    +362-440 - base queries + query init !! 
+    484-530 - no inference; what are references ?!
+2. What are reference points?
+    Where do they get them from?
+    How are offsets sampled?
 3. Find where the vector map at
-4. Find fusion
-5. Can one skip the backbone and fuse images at the same time with BEV features extraction?
++4. Find fusion (it is 2D-to-BEV)
++5. Can one skip the backbone and fuse images at the same time with BEV features extraction?
++5.1 How is local map embedded for attn in hrmap?
 6. Check which repeated blocks share params, and which do not (for bevfusion, too)
++7. BEV history architecture ?!
+
+Step 2
++1. Find and explain queries for decoder
+    +Which queries are initialized (instance, pt, hierarchial?), and what does it mean?
+        I think, instance, but must check NO ! hierarchial
+    projects\mmdet3d_plugin\maptr\dense_heads\maptrv2_head.py
+        +362-440 - base queries + query init !! 
+    +EXPLAIN!
+
+2. Map Encoder
+    projects\mmdet3d_plugin\maptr\modules\transformer.py
+        424-463
