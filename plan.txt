@@ -3,6 +3,8 @@
 1. Debug inference and try to reverse engineering what I see
 
 -----------------------------------------------------
+ARCHITECTURE
+
 -1. NORMAL LINE NUMERATION
 
 0. PERHAPS Vectorized global map downside: different number of points for different objects,
@@ -37,4 +39,7 @@ Step 2
     projects\mmdet3d_plugin\maptr\modules\transformer.py
         424-463
 
+------------------------------------
+TRAIN
+Is it hard to add wandb? Is it only config that needs altering?
 
