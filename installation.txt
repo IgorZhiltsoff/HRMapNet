@@ -1,0 +1,11 @@
+Downgrade av2 to minimum, numpy to 1.23
+install gcc-multilib
+Upgrade gcc to 7 (https://anaconda.org/gouarin/gcc-7)
+
+
+-----
+using mini:
+rename to trainval
+download map expansion
+upgrade networkx to 3.1
+ignore assertion failure ??????
